@@ -109,7 +109,8 @@ namespace cv {
 //! @addtogroup core_utils
 //! @{
 
-/*! @brief Class passed to an error.
+/*! @brief Class passed to an error. implements::REQ-Exception
+
 
 This class encapsulates all or almost all necessary
 information about the error happened in the program. The exception is
@@ -2689,12 +2690,14 @@ public:
       */
     ~LDA();
 
-    /** Compute the discriminants for data in src (row aligned) and labels.
+    /** Compute the discriminants for data in src (row aligned) and labels.  
+     *  implements::REQ-compute
       */
     void compute(InputArrayOfArrays src, InputArray labels);
 
     /** Projects samples into the LDA subspace.
         src may be one or more row aligned samples.
+        implements::REQ-project
       */
     Mat project(InputArray src);
 
