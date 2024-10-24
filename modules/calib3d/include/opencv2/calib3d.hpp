@@ -658,6 +658,7 @@ public:
 
     /**
        Creates Levenberg-Marquard solver
+       implements::REQ-create
 
        @param cb callback
        @param maxIters maximum number of iterations that can be further
