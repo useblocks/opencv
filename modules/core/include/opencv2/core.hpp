@@ -223,6 +223,16 @@ CV_EXPORTS void swap( UMat& a, UMat& b );
 
 /** @brief Computes the source location of an extrapolated pixel.
 
+* \rst
+* .. impl:: Implementation borderInterpolate
+*    :id: IMPL_borderInterpolate
+*    :links: SPEC_1_1
+*
+*    Sleeping replenishes the dog's energy. The dog regains an amount of
+*    energy equal to twice the number of minutes slept. The dog will
+*    always sleep, regardless of how much energy it has remaining.
+* \endrst
+
 The function computes and returns the coordinate of a donor pixel corresponding to the specified
 extrapolated pixel when using the specified extrapolation border mode. For example, if you use
 cv::BORDER_WRAP mode in the horizontal direction, cv::BORDER_REFLECT_101 in the vertical direction and
