@@ -1,0 +1,18 @@
+[config]
+doxygen_binary = "/usr/sbin/doxygen"
+
+[[projects]]
+name = "opencv_modules_calib3d"
+path = "./modules/calib3d"
+src-globs = ["src/**/*.cpp", "include/**/*.hpp", "perf/**/*.cpp", "perf/**/*.hpp"]
+include-dirs = []
+defines = ["FOO=BAR"]
+output = "outputs"
+
+[[projects]]
+name = "opencv_modules_core"
+path = "./modules/core"
+src-globs = ["src/**/*.cpp", "include/**/*.hpp"]
+include-dirs = []
+defines = ["FOO=BAR"]
+output = "outputs"
